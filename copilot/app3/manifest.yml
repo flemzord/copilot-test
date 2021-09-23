@@ -32,14 +32,3 @@ exec: true     # Enable running commands in your container.
 
 #secrets:                      # Pass secrets from AWS Systems Manager (SSM) Parameter Store.
 #  GITHUB_TOKEN: GITHUB_TOKEN  # The key is the name of the environment variable, the value is the name of the SSM parameter.
-
-source:
-  provider: GitHub
-  properties:
-    branch: master
-    repository: https://github.com/<user>/sample-app-frontend
-
-# You can override any of the values defined above by environment.
-#environments:
-#  test:
-#    count: 2               # Number of tasks to run for the "test" environment.
